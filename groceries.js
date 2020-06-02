@@ -20,7 +20,56 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00
-	}
+	},
+		{
+		name: "corn",
+		vegetarian: true,
+		glutenFree: true,
+		price: 0.99
+	},
+	{
+		name: "hotdog",
+		vegetarian: false,
+		glutenFree: true,
+		price: 6.99
+	},
+	{
+		name: "pasta",
+		vegetarian: true,
+		glutenFree: false,
+		price: 3.49
+	},
+	{
+		name: "apple",
+		vegetarian: true,
+		glutenFree: true,
+		price: 0.50
+	},
+	{
+		name: "carrot",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.99
+	},
+	{
+		name: "eggs",
+		vegetarian: true,
+		glutenFree: true,
+		price: 7.00
+	},
+	{
+		name: "milk",
+		vegetarian: true,
+		glutenFree: true,
+		price: 4.50
+	},
+	{
+		name: "ham",
+		vegetarian: false,
+		glutenFree: true,
+		price: 14.00
+	},
+	
 ];
 	
 
