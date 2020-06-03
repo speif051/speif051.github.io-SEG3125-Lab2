@@ -1,4 +1,10 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+h1{
+  color: blue;
+  text-align: right;
+  vertical-align: bottom;
+} 
+<h1>Samuel Peifer-Dawson</h1>
 
 /* Style the tab */
 .tab {
@@ -35,13 +41,3 @@
   border: 1px solid #ccc;
   border-top: none;
 }
-
-h1{
-  color: red;
-  text-align: right;
-  vertical-align: bottom;
-}
-
-<div>
-  <h1>Samuel Peifer-Dawson</h1>
-</div>
