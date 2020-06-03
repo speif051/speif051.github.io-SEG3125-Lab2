@@ -19,11 +19,9 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="None">None</option>
+	<input type="checkbox" id="Vegetarian" onclick="populateListProductChoices(this.id, 'displayProduct')" value="Vegetarian">Vegetarian</input>
+   	<input type="checkbox" id="GlutenFree" onclick="populateListProductChoices(this.id, 'displayProduct')" value="GlutenFree">GlutenFree</input>
+    	<input type="checkbox" id="GlutenFree" onclick="populateListProductChoices(this.id, 'displayProduct')" value="Organic">Organic</input>
 	</select>
 </div>
 
