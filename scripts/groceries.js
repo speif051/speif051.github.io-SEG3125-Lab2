@@ -63,7 +63,7 @@ var products = [
 		name: "eggs",
 		vegetarian: true,
 		glutenFree: true,
-		organic: false
+		organic: false,
 		price: 8.00
 	},
 	{
