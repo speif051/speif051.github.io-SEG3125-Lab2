@@ -1,13 +1,5 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 
-/* Sign name */
-
-/*h1{
-   color: red;
-   text-align: right;
-   vertical-align: bottom;
-}*/
-
 /* Style the tab */
 .tab {
   overflow: hidden;
