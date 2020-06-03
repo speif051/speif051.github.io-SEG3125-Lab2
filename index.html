@@ -19,8 +19,11 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Choose a Category:
-	<input type="checkbox" id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	</select>
+	<input type="checkbox" id="dietSelect" name="dietSelect">
+	<option value="Vegetarian">Vegetarian onchange="populateListProductChoices(this.id, 'displayProduct')"</option>
+	<option value="GlutenFree">GlutenFree onchange="populateListProductChoices(this.id, 'displayProduct')"</option>
+	</input>
+	onchange="populateListProductChoices(this.id, 'displayProduct')"
 </div>
 
 <div id="Products" class="tabcontent">
