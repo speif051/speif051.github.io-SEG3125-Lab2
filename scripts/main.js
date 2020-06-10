@@ -34,9 +34,9 @@ function populateListProductChoices(slct1, slct2) {
    	 s2.innerHTML = "";
 		
 	// obtain a reduced list of products based on restrictions
-    	var returnArray = restrictListProducts(products, s1.value);
-	var optionArray = returnArray[0];
-	var priceArray = returnArray[1];
+    	//var returnArray = restrictListProducts(products, s1.value);
+	var optionArray = restrictListProducts(products, s1.value);
+	//var priceArray = returnArray[1];
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
@@ -45,7 +45,7 @@ function populateListProductChoices(slct1, slct2) {
 	for (i = 0; i < optionArray.length; i++) {
 			
 		var productName = optionArray[i];
-		var productPrice = priceArray[i];
+		//var productPrice = priceArray[i];
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
@@ -57,7 +57,7 @@ function populateListProductChoices(slct1, slct2) {
 		var label = document.createElement('label')
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
-		label.appendChild(document.createTextNode(productPrice));
+		//label.appendChild(document.createTextNode(productPrice));
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
