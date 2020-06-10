@@ -41,7 +41,7 @@ var products = [
 			name: "pasta",
 			vegetarian: true,
 			glutenFree: false,
-			organic: false
+			organic: false,
 			price: 3.00
 		},
 		{
