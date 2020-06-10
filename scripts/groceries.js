@@ -3,6 +3,13 @@
 
 var products = [
 	{
+		name: "brocoli",
+		vegetarian: true,
+		glutenFree: false,
+		organic: true,
+		price: 1.45
+	},
+	{
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
