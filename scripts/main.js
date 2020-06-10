@@ -27,14 +27,16 @@ function openInfo(evt, tabName) {
 // it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct1, slct2) {
-    var s1 = document.getElementById(slct1);
-    var s2 = document.getElementById(slct2);
+    	var s1 = document.getElementById(slct1);
+    	var s2 = document.getElementById(slct2);
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
-    s2.innerHTML = "";
+   	 s2.innerHTML = "";
 		
 	// obtain a reduced list of products based on restrictions
-    var optionArray, priceArray = restrictListProducts(products, s1.value);
+    	var returnArray = restrictListProducts(products, s1.value);
+	var optionArray = returnArray[0];
+	var priceArray = returnArray[1];
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
@@ -43,6 +45,7 @@ function populateListProductChoices(slct1, slct2) {
 	for (i = 0; i < optionArray.length; i++) {
 			
 		var productName = optionArray[i];
+		var productPrice = priceArray[i];
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
@@ -54,6 +57,7 @@ function populateListProductChoices(slct1, slct2) {
 		var label = document.createElement('label')
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
+		label.appendChild(document.createTextNode(productPrice));
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
