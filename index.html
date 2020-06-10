@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<title>Groceries 4 Less</title>
+<head>
 	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
-
 
 <body>
 
@@ -21,9 +19,11 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Choose a Category:
-	<input type="checkbox" id="Vegetarian" onclick="populateListProductChoices(this.id, 'displayProduct')" value="Vegetarian">Vegetarian</input>
-   	<input type="checkbox" id="GlutenFree" onclick="populateListProductChoices(this.id, 'displayProduct')" value="GlutenFree">GlutenFree</input>
-    	<input type="checkbox" id="Organic" onclick="populateListProductChoices(this.id, 'displayProduct')" value="Organic">Organic</input>
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="Vegetarian">Vegetarian</option>
+    <option value="GlutenFree">GlutenFree</option>
+    <option value="None">None</option>
 	</select>
 </div>
 
