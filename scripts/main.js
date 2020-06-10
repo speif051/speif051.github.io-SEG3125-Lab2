@@ -57,6 +57,7 @@ function populateListProductChoices(slct1, slct2) {
 		var label = document.createElement('label')
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
+		label.appendChild("  $");
 		label.appendChild(document.createTextNode(productPrice));
 		s2.appendChild(label);
 		
